@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Editable Resume Builder</title>
+</head>
+<body>
+    <form id="resumeform">
+        <h1>Dynamic and Editable Resume Builder</h1>
+        <fieldset>
+        <legend>Career Objective:</legend>
+        <p>To work in a dynamic and progressive environment offering ample opportunities for diversified
+            exposure enhancement of professional skills and career.</p>
+        </fieldset>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name: </label>
+        <input type="text" id="name" required><br>
+        
+        <label for="fname">Father Name: </label>
+        <input type="text" id="fname" required><br>
+
+        <label for="DOB">Date of Birth: </label>
+        <input type="date" id="DOB" required><br>
+
+        <p>Marital Status:  <select name="marriedstatus" id="marriedstatus" required>
+            <option value="">--Please Select A Married status--</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+        </select></p>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" required>
+    </fieldset>
+    <fieldset>
+    <legend>Education</legend>
+        <label for="degree">Degree Title:</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <label for="institution">institution:</label>
+        <input type="text" id="institution" name="institution" required>
+
+        <label for="completionyear">Completion Year:</label>
+        <input type="text" id="completionyear" name="completionyear" required>
+    </fieldset>
+    <fieldset>
+        <legend>Experience</legend>
+        <label for="companyname">Job Place:</label>
+        <input type="text" name="companyname" id="companyname" required>
+
+        <label for="designation">Designation:</label>
+        <input type="text" name="designation" id="designation" required>
+        
+        <label for="Tenure">Tenure:</label>
+        <input type="Tenure" name="Tenure" id="Tenure" required>
+    </fieldset>
+    <fieldset>
+        <legend>Skills</legend>
+        <textarea rows="4" id="skills"></textarea>
+    </fieldset>
+    <button type="submit">Generate Resume</button>
+    </form>
+  
+    <div id="resume-display" contenteditable="true">
+
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
