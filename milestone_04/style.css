@@ -1,0 +1,75 @@
+body{
+    background-image: url(https://img.freepik.com/premium-photo/beautiful-nature-view-butterfly-wooden-background_355067-989.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(203,185,185,0.5);
+    border: 5px groove green;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+fieldset {
+    border: 2px solid rgb(17,21,10);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #202c38
+}
+
+input, textarea, select {
+    width: calc(100% - 50px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid rgb(250,255,243);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+select {
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background: cadetblue;
+    color: white;
+    border: 3px solid rgb(255,222,222);
+    border-radius: 6px;
+
+}
+
+button:hover {
+    background-color: #202c38;
+}
+
+#resume-display {
+    max-width: 600px;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 20px;
+    border: 5px groove green;
+    border-radius: 8px;
+    border-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    outline: none;
+}
